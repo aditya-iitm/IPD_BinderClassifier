@@ -118,6 +118,6 @@ for e in range(10):
             replicated_binder_model_params = optax.apply_updates(replicated_binder_model_params, updates)
             loss_list.append(loss)
             if (global_step) % 100 == 0:
-                print(e+1, global_step, np.mean(loss)) 
+                print(e+1, global_step, np.mean(loss_list)) 
                 print(labels, prob)
                 loss_list = []
